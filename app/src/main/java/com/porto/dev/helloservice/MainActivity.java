@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startService(new Intent(getBaseContext(),MyService.class));
+//                Toast.makeText(getBaseContext(),"IP:"+Utils.getIPAddress(true),Toast.LENGTH_LONG).show();
             }
         });
 
